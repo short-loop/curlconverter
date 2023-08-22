@@ -1,16 +1,16 @@
 {
-  "name": "curlconverter",
+  "name": "@shortloop/curlconverter",
   "version": "4.8.0",
-  "description": "convert curl commands to Python, JavaScript, Go, PHP and more",
+  "description": "convert curl commands to JSON",
   "homepage": "https://curlconverter.com",
   "author": {
-    "name": "Nick Carneiro",
-    "email": "nickc@trillworks.com",
-    "url": "https://trillworks.com"
+    "name": "Divyanshu Sharma",
+    "email": "divyanshu.sharma@shortloop.dev",
+    "url": "https://shortloop.dev"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/curlconverter/curlconverter.git"
+    "url": "https://github.com/shortloop/curlconverter.git"
   },
   "license": "MIT",
   "keywords": [
@@ -25,17 +25,12 @@
   "type": "module",
   "dependencies": {
     "@curlconverter/tree-sitter-bash": "^0.0.3",
-    "jsesc": "^3.0.2",
-    "lossless-json": "^2.0.11",
-    "tree-sitter": "^0.20.5",
-    "web-tree-sitter": "^0.20.8",
-    "yamljs": "^0.3.0"
+    "tree-sitter": "^0.20.5"
   },
   "devDependencies": {
     "@types/diff": "^5.0.3",
     "@types/glob": "^8.1.0",
     "@types/har-format": "^1.2.11",
-    "@types/jsesc": "^3.0.1",
     "@types/nunjucks": "^3.2.3",
     "@types/tape": "^5.6.0",
     "@types/yamljs": "^0.2.31",
@@ -75,9 +70,5 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  },
-  "bin": "dist/src/cli.js",
-  "browser": {
-    "./dist/src/shell/Parser.js": "./dist/src/shell/webParser.js"
   }
 }
